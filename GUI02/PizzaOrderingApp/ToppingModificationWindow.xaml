@@ -1,0 +1,16 @@
+﻿<Window x:Class="PizzaOrderingApp.ToppingModificationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:PizzaOrderingApp"
+        Title="Modify Toppings" Height="450" Width="350">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="Select Toppings" FontSize="20" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+            <ListBox x:Name="ToppingsListBox" SelectionMode="Multiple" Height="300" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <Button Content="OK" Width="80" Margin="5" Click="OK_Click"/>
+                <Button Content="Cancel" Width="80" Margin="5" Click="Cancel_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
